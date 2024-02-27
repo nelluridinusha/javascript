@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <style>
+
+            h1{
+                color:blueviolet;
+                text-align: center;
+
+            }
+        </style>
+        
+    </head>
+
+    <body>
+
+        <h1>User can Register AND See the details</h1>
+
+     
+       
+
+        <script>
+          
+        
+        var a=document.createElement("button")
+        a.setAttribute("style","background-color:black; color:aqua; width:150px; height:50px; display:block; margin-left:200px")
+        a.innerText="Register";
+        document.body.appendChild(a);
+        a.addEventListener("click",name1);
+        
+        
+        function name1(){
+            var name=prompt("enter username");
+            var password=prompt("enter password");
+            var email=prompt("enter email")
+            var DOB=prompt("enter Date of birth")
+            var mothername=prompt("enter the mother's name")
+            localStorage.setItem("Username",name)
+            localStorage.setItem("Pwd",password) 
+            localStorage.setItem("Email",email)
+            localStorage.setItem("DOB",DOB)
+            localStorage.setItem("Mother'sname",mothername)          
+        };
+        
+       
+        var b=document.createElement("button");
+        b.setAttribute("style","background-color:black; color:aqua; width:150px; height:50px; display:block; margin:200px")
+        b.innerText="See your details";
+        document.body.appendChild(b);
+        b.addEventListener("click",name2);
+        
+        
+        function name2(){
+            window.location.assign("./details.html");
+         };
+
+
+
+        
+       
+
+
+
+        
+       
+    </script>
+
+           
+
+            <!-- var a=document.createElement("button");
+            a.innerText("see details");
+            document.body.appendChild(a);
+            a.addEventListener("click",name2);
+
+            function name2(){
+
+
+            window.location.assign("./details.html");
+
+
+            }
+           
+       -->
+
+        </script>
+    </body>
+</html>

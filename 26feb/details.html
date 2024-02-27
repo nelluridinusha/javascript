@@ -1,0 +1,79 @@
+<html>
+
+<head>
+
+   <style>
+      table{
+         border: 2px solid;
+      }
+      td{
+         border: 1px solid aquamarine ;
+      }
+   </style>
+</head>
+    <body>
+      
+       
+
+    <script>
+
+      
+        var a=document.createElement("table");
+        document.body.appendChild(a);
+        //
+        var b=document.createElement("tr");
+        b.setAttribute("style","color:orange")
+        a.appendChild(b);
+        var c=document.createElement("td");
+        c.innerText="Username";
+        b.appendChild(c);
+       var d=document.createElement("td");
+       d.innerHTML=window.localStorage.getItem("Username");
+       b.appendChild(d);
+       //
+       var g=document.createElement("tr");
+       a.appendChild(g);
+       var h=document.createElement("td");
+       h.innerText="Password"
+       g.appendChild(h);
+       var i=document.createElement("td")
+       i.innerHTML=window.localStorage.getItem("Password")
+       g.appendChild(i);
+       //
+       var l=document.createElement("tr");
+       l.setAttribute("style","color:green")
+       a.appendChild(l);
+       var m=document.createElement("td");
+       m.innerText="Email";
+       l.appendChild(m);
+       var n=document.createElement("td")
+       n.innerHTML=window.localStorage.getItem("Email")
+       l.appendChild(n);
+       //
+       var p=document.createElement("tr");
+       a.appendChild(p);
+       var q=document.createElement("td");
+       q.innerText="DOB";
+       p.appendChild(q);
+       var r=document.createElement("td")
+       r.innerHTML=window.localStorage.getItem("DOB")
+       p.appendChild(r);
+       //
+       var x=document.createElement("tr");
+       x.setAttribute("style","color:blue")
+       a.appendChild(x);
+       var y=document.createElement("td");
+       y.innerText="Mothername"
+       x.appendChild(y);
+       var z=document.createElement("td")
+       z.innerHTML=window.localStorage.getItem("Mother'sname")
+       x.appendChild(z);
+     
+       
+       
+        
+    </script>
+      
+    </script>
+    </body>
+</html>
